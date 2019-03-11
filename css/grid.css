@@ -1,0 +1,47 @@
+main header .stripes {
+   top: 0;
+   grid: repeat(5, 200px)/repeat(10, 1fr);
+   -webkit-transform-origin: 0;
+   transform-origin: 0;
+   background: linear-gradient(#222, #444 15%, #888 34%, #bbb 50%, #fff 70%);
+}
+
+main .stripes {
+   position: absolute;
+   z-index: -1;
+   width: 100%;
+   display: grid;
+   -webkit-transform: skewY(-12deg);
+   transform: skewY(-12deg);
+}
+
+header .stripes {
+   display: grid;
+   grid: repeat(5, 200px) / repeat(10, 1fr);
+}
+
+header .stripes :nth-child(1) {
+   grid-column: span 5;
+   background: linear-gradient(100grad, #2228, #2220);
+}
+
+header .stripes :nth-child(2) {
+   grid-area: 3 / span 4 / auto / -1;
+   background: linear-gradient(100grad, #5550, #5559);
+}
+
+header .stripes :nth-child(3) {
+   grid-row: 4;
+   grid-column: span 3;
+   background: linear-gradient(100grad, #bbb0, #bbb7);
+}
+
+header .stripes :nth-child(4) {
+   grid-area: 4 / span 5 / auto / -3;
+   background: linear-gradient(100grad, #bbb7, #bbb0);
+}
+
+header .stripes :nth-child(5) {
+   grid-area: 4 / span 2 / auto / -1;
+   background: linear-gradient(100grad, #bbb0, #bbb6);
+}
