@@ -41,11 +41,11 @@ header .stripes :nth-child(3) {
 }
 
 header .stripes :nth-child(4) {
-   grid-area: 4 / span 5 / auto / -3;
-   background: linear-gradient(100grad, #6667, #6660);
+   grid-area: 4 / span 7 / auto / -1;
+   background: linear-gradient(100grad, #6667, #6660 72%, #6666);
 }
 
 header .stripes :nth-child(5) {
-   grid-area: 4 / span 2 / auto / -1;
-   background: linear-gradient(100grad, #6660, #6666);
+   grid-area: 5 / span 10 / auto / -1;
+   background: linear-gradient(100grad, #4440, #4446);
 }
