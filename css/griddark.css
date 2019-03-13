@@ -2,7 +2,7 @@ body {
    background-color: #222;
 }
 
-main header .stripes {
+body header .stripes {
    top: 0;
    grid: repeat(5, 200px)/repeat(10, 1fr);
    -webkit-transform-origin: 0;
@@ -10,7 +10,7 @@ main header .stripes {
    background: linear-gradient(#fff, #ccc 10%, #888 34%, #555 50%, #222 82%);
 }
 
-main .stripes {
+body .stripes {
    position: absolute;
    z-index: -1;
    width: 100%;
