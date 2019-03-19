@@ -28,12 +28,17 @@ main {
    z-index: 0;
 }
 
+nav {
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+}
+
 .navbar-brand>img {
    border-radius: 4px;
 }
 
 .bg-light {
-   background-color: #cccc !important;
+   background-color: #ccc7 !important;
 }
 
 .bg-dark {
