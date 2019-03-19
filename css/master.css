@@ -28,21 +28,21 @@ main {
    z-index: 0;
 }
 
-nav {
-   backdrop-filter: blur(5px);
-   -webkit-backdrop-filter: blur(5px);
+.bg-blurred {
+   background-color: #ccce !important;
+}
+
+/*Needs experimantal web platform flag on chrome*/
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+   .bg-blurred {
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+      background-color: #ccc2 !important;
+   }
 }
 
 .navbar-brand>img {
    border-radius: 4px;
-}
-
-.bg-light {
-   background-color: #ccc7 !important;
-}
-
-.bg-dark {
-   background-color: #3339 !important;
 }
 
 footer {
