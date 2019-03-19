@@ -1,12 +1,22 @@
 html {
-   position: relative;
-   min-height: 100%;
+   min-height: 100vh;
+   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
 }
 
 body {
-   z-index: -2;
-   margin-bottom: 0px;
+   position: relative;
+   margin: 0;
    padding-bottom: 76px;
+   min-height: 100vh;
+   height: 100vh;
+   z-index: -2;
+   /*padding-bottom: 76px;*/
 }
 
 header .stripes {
@@ -15,6 +25,7 @@ header .stripes {
 
 main {
    color: #eee;
+   z-index: 0;
 }
 
 .navbar-brand>img {
@@ -30,10 +41,13 @@ main {
 }
 
 footer {
-   position: fixed;
    height: 60px;
-   bottom: 0;
    width: 100%;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
 }
 
 h1 {

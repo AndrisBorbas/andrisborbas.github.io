@@ -4,9 +4,10 @@ body {
 
 body header .stripes {
    top: 0;
-   grid: repeat(5, 200px)/repeat(10, 1fr);
+   grid: repeat(5, 175px)/repeat(10, 1fr);
    -webkit-transform-origin: 0;
    transform-origin: 0;
+   height: auto;
    background: linear-gradient(#fff, #ccc 10%, #888 34%, #555 50%, #222 82%);
 }
 
