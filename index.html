@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
       <meta name="description" content="Trying out bootstrap 4">
       <meta name="author" content="AndrisBorbas">
       <link rel="icon" href="favicon.png">
@@ -13,14 +13,12 @@
       <title>Home Page</title>
 
       <script src="jquery-3.3.1\jquery.min.js"></script>
+      <!--<script src="popper.js-1.14.7\umd\popper.min.js"></script>-->
       <link rel="stylesheet" href="bootstrap-4.3.1\css\bootstrap.min.css">
-      <script src="bootstrap-4.3.1\js\bootstrap.min.js"></script>
-      <script src="popper.js-1.14.7\umd\popper.min.js"></script>
-
-      <script src="js\index.js"></script>
+      <script src="bootstrap-4.3.1\js\bootstrap.bundle.min.js"></script>
 
       <link rel="stylesheet" href="css\griddark.css">
-      <link rel="stylesheet" href="css\dropdowns.css">
+      <link rel="stylesheet" href="css\dropdown.css">
       <link rel="stylesheet" href="css\master.css">
 
       <link rel="stylesheet" href="css\font-awesome.min.css">
@@ -51,32 +49,30 @@
                   <li class="nav-item active">
                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
+
                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarProjectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Projects
                      </a>
-                     <ul class="dropdown-menu bg-light multi-level" role="menu" aria-labelledby="dropdownMenu">
-                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Factorio Ratio Counter</a>
-                           <ul class="dropdown-menu bg-light">
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Factorio Ratio Counter</a>
+                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="https://andrisborbas.github.io/FactorioRatioCounter">Online</a></li>
                               <li class="dropdown-divider"></li>
                               <li><a class="dropdown-item disabled" href="https://github.com/AndrisBorbas/FactorioRatioCounter/releases">Compiled exe</a></li>
                               <li><a class="dropdown-item" href="https://github.com/AndrisBorbas/FactorioRatioCounter">Source Code</a></li>
                            </ul>
                         </li>
-                        <li class="dropdown-item disabled">Disabled test</li>
-                        <!--<li class="dropdown-divider"></li>-->
-                        <li class="dropdown-submenu"><a class="dropdown-item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">QuickCommands</a>
-                           <ul class="dropdown-menu bg-light">
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">QuickCommands</a>
+                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="https://www.unrealengine.com/marketplace/en-US/quickcommands">Plugin</a></li>
                               <li class="dropdown-divider"></li>
                               <li><a class="dropdown-item" href="https://github.com/AndrisBorbas/QuickCommands/wiki/Setup">Setup</a></li>
                               <li><a class="dropdown-item" href="https://github.com/AndrisBorbas/QuickCommands">Source Code</a></li>
                            </ul>
                         </li>
-                        <!--<li class="dropdown-divider"></li>-->
-                        <li class="dropdown-submenu"><a class="dropdown-item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ShortcutsFolder</a>
-                           <ul class="dropdown-menu bg-light">
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">ShortcutsFolder</a>
+                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="https://github.com/AndrisBorbas/ShortcutsFolder/releases">Skin</a></li>
                               <li class="dropdown-divider"></li>
                               <li><a class="dropdown-item" href="https://github.com/AndrisBorbas/ShortcutsFolder">Source Code</a></li>
@@ -84,6 +80,7 @@
                         </li>
                      </ul>
                   </li>
+
                   <li class="nav-item">
                      <a class="nav-link" href="https://github.com/AndrisBorbas">My GitHub</a>
                   </li>
@@ -100,6 +97,7 @@
             <h1 class="mt-5">Use the navbar ^^</h1>
 
             <!--<span style="float: right;"><a href="https://andrisborbas.github.io/" target="_blank"><img src="resources\qr-code.png" class="qr img-fluid pull-xs-right" style="margin-left: 1.5rem; margin-bottom: 2rem;"></img></a></span>-->
+
             <div class="accordion" id="blog" role="tablist" aria-multiselectable="true">
 
                <div class="card blogbg">
@@ -119,7 +117,9 @@
                            on AMD cards. You can change the maxTessFactor by editing the FlatTessellation.ush and PNTriangles.ush files and then recompiling
                            <strong>EVERY</strong> engine shader. The height is multplied by the tessellation factor, so the less you tessellate,
                            the heightmap gets applied less. This also works with landscapes if you use Worldposition-XY coords instead of LandscapeLayerCoords.</p>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ue4bpw" aria-expanded="false" aria-controls="collapseExample" style="margin-bottom: 6px;">
+                        <a class="btn btn-primary" role="button" href="https://blueprintue.com/blueprint/4f3kvi9v/" style="margin-bottom: 12px;" target="_blank">Copyable Blueprint</a>
+                        <br>
+                        <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#ue4bpw" aria-expanded="false" aria-controls="collapseExample" style="margin-bottom: 6px;">
                            Blueprint graph
                         </button>
                         <div class="collapse" id="ue4bpw">
@@ -181,6 +181,8 @@
             </p>
          </div>
       </footer>
+
+      <script js src="js\index.js"></script>
 
    </body>
 

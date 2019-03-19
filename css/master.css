@@ -13,7 +13,9 @@ header .stripes {
    z-index: -1;
 }
 
-main {}
+main {
+   color: #eee;
+}
 
 .navbar-brand>img {
    border-radius: 4px;
@@ -36,6 +38,7 @@ footer {
 
 h1 {
    margin-bottom: 1.5rem;
+   text-shadow: 2px 2px 5px #222;
 }
 
 .qr {
@@ -79,12 +82,15 @@ a[data-toggle="collapse"]:after {
    transform: rotate(90deg);
    transition: all linear 0.25s;
    float: right;
+   text-shadow: 2px -2px 5px #222;
 }
 
 a[data-toggle="collapse"].collapsed:after {
    transform: rotate(0deg);
+   text-shadow: 2px 2px 5px #222;
 }
 
 a[data-toggle="collapse"] {
    transform: rotate(0deg);
+   text-shadow: 2px 2px 5px #222;
 }
