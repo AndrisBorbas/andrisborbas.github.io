@@ -6,6 +6,7 @@ html {
 body {
    z-index: -2;
    margin-bottom: 0px;
+   padding-bottom: 76px;
 }
 
 header .stripes {
@@ -33,8 +34,57 @@ footer {
    width: 100%;
 }
 
+h1 {
+   margin-bottom: 1.5rem;
+}
+
 .qr {
    width: 250px;
    border-radius: 15px;
-   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2), 0 1rem 2rem 0 rgba(0, 0, 0, 0.25);
+   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.ue4bp {
+   width: 66%;
+   min-width: 280px;
+   max-width: 575px;
+   margin-left: 1rem;
+   margin-bottom: 2rem;
+   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.blogbg {
+   background-color: #0000;
+}
+
+.blogtitle>a {
+   color: #eee;
+   text-shadow: 2px 2px 5px #222;
+}
+
+p {
+   color: #eee;
+   text-shadow: 2px 2px 5px #222;
+}
+
+a[data-toggle="collapse"]:after {
+   display: inline-block;
+   display: inline-block;
+   font: normal normal normal 14px/1 FontAwesome;
+   font-size: inherit;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   content: "\f054";
+   transform: rotate(90deg);
+   transition: all linear 0.25s;
+   float: right;
+}
+
+a[data-toggle="collapse"].collapsed:after {
+   transform: rotate(0deg);
+}
+
+a[data-toggle="collapse"] {
+   transform: rotate(0deg);
 }

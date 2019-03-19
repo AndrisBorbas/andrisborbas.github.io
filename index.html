@@ -13,19 +13,17 @@
       <title>Bootstrap Test</title>
 
       <script src="jquery-3.3.1\jquery.min.js"></script>
-      <script src="bootstrap-4.3.1\js\bootstrap.js"></script>
-
-      <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="bootstrap-4.3.1\css\bootstrap.css">
+      <script src="bootstrap-4.3.1\js\bootstrap.min.js"></script>
+      <script src="popper.js-1.14.7\umd\popper.min.js"></script>
 
       <script src="js\index.js"></script>
-
-      <!-- Custom styles for this template -->
-      <!--<link rel="stylesheet" href="css\cover.css">-->
 
       <link rel="stylesheet" href="css\griddark.css">
       <link rel="stylesheet" href="css\dropdowns.css">
       <link rel="stylesheet" href="css\master.css">
+
+      <link rel="stylesheet" href="css\font-awesome.min.css">
 
    </head>
 
@@ -54,7 +52,7 @@
                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarProjectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Projects
                      </a>
                      <ul class="dropdown-menu bg-light multi-level" role="menu" aria-labelledby="dropdownMenu">
@@ -99,8 +97,78 @@
       <main role="main" class="flex-shrink-0">
          <div class="container">
             <h1 class="mt-5">Use the navbar ^^</h1>
-            <span style="float: right;"><a href="https://andrisborbas.github.io/" target="_blank"><img src="qr-code.png" class="qr img-fluid pull-xs-right" style="margin-left: 1.5rem; margin-bottom: 2rem;"></img></a></span>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <!--<span style="float: right;"><a href="https://andrisborbas.github.io/" target="_blank"><img src="resources\qr-code.png" class="qr img-fluid pull-xs-right" style="margin-left: 1.5rem; margin-bottom: 2rem;"></img></a></span>-->
+            <div class="accordion" id="blog" role="tablist" aria-multiselectable="true">
+
+               <div class="card blogbg">
+                  <div class="card-header" role="tab" id="headingOne">
+                     <h2 class="mb-0 blogtitle">
+                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           UE4 Tessellation function
+                        </a>
+                     </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                     <div class="card-body">
+                        <img class="float-right qr ue4bp" src="resources\Capture.png">
+                        <p style="margin-bottom: 6px">This is a UE4 material function that can be used to add tessellation to any material.
+                           The height of the tessellation can be controlled with a scalar. The function has parameters inside that can be
+                           controlled in a material instance. The maxTessFactor is 15 by default <strong>IN ENGINE</strong> because it gets slower if you go higher
+                           on AMD cards. You can change the maxTessFactor by editing the FlatTessellation.ush and PNTriangles.ush files and then recompiling
+                           <strong>EVERY</strong> engine shader. The height is multplied by the tessellation factor, so the less you tessellate,
+                           the heightmap gets applied less. This also works with landscapes if you use Worldposition-XY coords instead of LandscapeLayerCoords.</p>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ue4bpw" aria-expanded="false" aria-controls="collapseExample">
+                           Blueprint graph
+                        </button>
+                        <div class="collapse" id="ue4bpw">
+                           <div class="float-right embed-responsive embed-responsive-16by9 ue4bp">
+                              <iframe class="embed-responsive-item" src="https://blueprintue.com/render/4f3kvi9v" scrolling="no"></iframe>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="card blogbg">
+                  <div class="card-header" role="tab" id="headingTwo">
+                     <h2 class="mb-0 blogtitle">
+                        <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="collapsed">
+                           AccordionTest1
+                        </a>
+                     </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                     <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+                     </div>
+                  </div>
+               </div>
+
+               <div class="card blogbg">
+                  <div class="card-header" role="tab" id="headingThree">
+                     <h2 class="mb-0 blogtitle">
+                        <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="collapsed">
+                           AccordionTest2
+                        </a>
+                     </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                     <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                     </div>
+                  </div>
+               </div>
+            </div>
+
          </div>
       </main>
 
