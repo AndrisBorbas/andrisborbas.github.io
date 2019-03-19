@@ -68,6 +68,9 @@ h1 {
 p {
    color: #eee;
    text-shadow: 2px 2px 5px #222;
+   word-break: keep-all;
+   word-wrap: normal;
+   overflow-wrap: normal;
 }
 
 a[data-toggle="collapse"]:after {
