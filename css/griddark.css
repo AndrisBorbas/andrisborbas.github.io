@@ -27,26 +27,31 @@ header .stripes {
 
 header .stripes :nth-child(1) {
    grid-column: span 5;
+   background: linear-gradient(100grad, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
    background: linear-gradient(100grad, #fff8, #fff0);
 }
 
 header .stripes :nth-child(2) {
    grid-area: 3 / span 4 / auto / -1;
+   background: linear-gradient(100grad, rgba(160, 160, 160, 0), rgba(160, 160, 160, 0.56));
    background: linear-gradient(100grad, #aaa0, #aaa9);
 }
 
 header .stripes :nth-child(3) {
    grid-row: 4;
    grid-column: span 3;
+   background: linear-gradient(100grad, rgba(96, 96, 96, 0), rgba(96, 96, 96, 0.43));
    background: linear-gradient(100grad, #6660, #6667);
 }
 
 header .stripes :nth-child(4) {
    grid-area: 4 / span 7 / auto / -1;
+   background: linear-gradient(100grad, rgba(96, 96, 96, 0.43), rgba(96, 96, 96, 0) 72%, rgba(96, 96, 96, 0.375));
    background: linear-gradient(100grad, #6667, #6660 72%, #6666);
 }
 
 header .stripes :nth-child(5) {
    grid-area: 5 / span 10 / auto / -1;
+   background: linear-gradient(100grad, rgba(64, 64, 64, 0), rgba(64, 64, 64, 0.375));
    background: linear-gradient(100grad, #4440, #4446);
 }

@@ -29,6 +29,7 @@ main {
 }
 
 .bg-blurred {
+   background-color: rgba(191, 191, 191, 0.91);
    background-color: #ccce;
 }
 
@@ -37,6 +38,7 @@ main {
    .bg-blurred {
       -webkit-backdrop-filter: blur(4px);
       backdrop-filter: blur(4px);
+      background-color: rgba(191, 191, 191, 0.125) !important;
       background-color: #ccc2 !important;
    }
 }
@@ -77,7 +79,17 @@ h1 {
 }
 
 .blogbg {
+   background-color: rgba(0, 0, 0, 0);
    background-color: #0000;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+   .blogbg {
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      background-color: rgba(64, 64, 64, 0.125) !important;
+      background-color: #4442 !important;
+   }
 }
 
 .blogtitle>a {
