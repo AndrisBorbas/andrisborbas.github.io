@@ -81,6 +81,7 @@ h1 {
 .blogbg {
    background-color: rgba(0, 0, 0, 0);
    background-color: #0000;
+   background-color: transparent;
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
@@ -95,6 +96,10 @@ h1 {
 .blogtitle>a {
    color: #eee;
    text-shadow: 2px 2px 5px #222;
+}
+
+p.dropdown-item {
+   text-shadow: none;
 }
 
 p {
