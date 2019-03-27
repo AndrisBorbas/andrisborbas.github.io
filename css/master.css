@@ -28,6 +28,14 @@ main {
    z-index: 0;
 }
 
+a {
+   color: #62c0ff;
+}
+a:hover {
+   color: #58ace5;
+
+}
+
 .bg-blurred {
    background-color: rgba(191, 191, 191, 0.91);
    background-color: #ccce;
@@ -63,14 +71,30 @@ h1 {
    text-shadow: 2px 2px 5px #222;
 }
 
-.qr {
-   width: 250px;
+.card > .collapse{
+   border-bottom: 4px ridge rgb(80, 80, 80, .312);
+   border-bottom: 4px ridge #5555;
+}
+
+.border-radius-15 {
    border-radius: 15px;
+}
+
+.border-radius-50 {
+   border-radius: 50%;
+}
+
+.large-image {
+   width: 66%;
+   min-width: 280px;
+   max-width: 575px;
+   margin-left: 1rem;
+   margin-bottom: 2rem;
    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
-.ue4bp {
-   width: 66%;
+.small-image {
+   width: 33%;
    min-width: 280px;
    max-width: 575px;
    margin-left: 1rem;

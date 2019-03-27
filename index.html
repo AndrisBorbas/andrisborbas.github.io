@@ -20,7 +20,7 @@
       <link rel="stylesheet" href="css\griddark.css">
       <link rel="stylesheet" href="css\dropdown.css">
       <link rel="stylesheet" href="css\master.css">
-      <link rel="stylesheet" href="css\master.scss">
+      <!--<link rel="stylesheet" href="css\master.scss">-->
 
       <link rel="stylesheet" href="css\font-awesome.min.css">
 
@@ -113,16 +113,38 @@
             <div class="accordion" id="blog" role="tablist" aria-multiselectable="true">
 
                <div class="card blogbg">
-                  <div class="card-header" role="tab" id="headingOne">
+                  <div class="card-header" role="tab" id="DesertBedrock">
                      <h2 class="mb-0 blogtitle">
-                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <a data-toggle="collapse" href="#collapseBedrock" aria-expanded="true" aria-controls="collapseBedrock">
+                           Desert Bedrock Substance
+                        </a>
+                     </h2>
+                  </div>
+                  <div id="collapseBedrock" class="collapse show" aria-labelledby="DesertBedrock">
+                     <div class="card-body">
+                        <div class="float-right embed-responsive embed-responsive-1by1 border-radius-15 small-image">
+                           <video class="embed-responsive-item" src="resources/desertbedrock.mp4" poster="resources/desertbedrockpw.png" autoplay muted loop>
+                           </video>
+                        </div>
+                        <p class="" style="margin-bottom: 6px;">I follow Daniel Thiger's <a class="" href="https://gumroad.com/l/detebedrocktut" target="_blank">excellent tutorial</a>
+                           on how to create a Desert Bedrock material in Substance Designer. I learned a lot from the video and it helped me create other materials as well.
+                           The render was created in Marmoset Toolbag 3. Higher quality video availabe here: </p>
+                        <a class="btn btn-primary" role="download" href="resources/desertbedrockhq.mp4" style="margin-bottom: 12px;" download="DesertBedrockRender"><i class="fa fa-download"></i> Download High Quality</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="card blogbg">
+                  <div class="card-header" role="tab" id="TessellationBP">
+                     <h2 class="mb-0 blogtitle">
+                        <a data-toggle="collapse" href="#collapseTBP" aria-expanded="true" aria-controls="collapseTBP">
                            UE4 Tessellation function
                         </a>
                      </h2>
                   </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                  <div id="collapseTBP" class="collapse show" aria-labelledby="TessellationBP">
                      <div class="card-body">
-                        <img class="float-right qr ue4bp" src="resources\tessellation.png">
+                        <img class="float-right border-radius-15 large-image" src="resources\tessellation.png">
                         <p class="" style="margin-bottom: 6px;">This is a UE4 material function that can be used to add tessellation to any material.
                            The height of the tessellation can be controlled with a scalar. The function has parameters inside that can be
                            controlled in a material instance. <br />The maxTessFactor is 15 by default <strong>IN ENGINE</strong> because it gets slower if you go higher
@@ -135,7 +157,7 @@
                            Blueprint graph
                         </button>
                         <div class="collapse" id="ue4bpw">
-                           <div class="float-right embed-responsive embed-responsive-16by9 ue4bp">
+                           <div class="float-right embed-responsive embed-responsive-16by9 large-image">
                               <iframe class="embed-responsive-item" src="https://blueprintue.com/render/4f3kvi9v" scrolling="no"></iframe>
                            </div>
                         </div>
