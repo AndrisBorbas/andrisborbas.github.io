@@ -38,8 +38,8 @@ a:hover {
 }
 
 .bg-blurred {
-   background-color: rgba(191, 191, 191, 0.91);
-   background-color: #ccce;
+   background-color: rgba(144, 144, 144, 0.125);
+   background-color: #9992;
 }
 
 /*Needs experimantal web platform flag on chrome*/
@@ -47,8 +47,8 @@ a:hover {
    .bg-blurred {
       -webkit-backdrop-filter: blur(6px);
       backdrop-filter: blur(6px);
-      background-color: rgba(191, 191, 191, 0.125) !important;
-      background-color: #ccc2 !important;
+      background-color: rgba(144, 144, 144, 0.125) !important;
+      background-color: #9992 !important;
    }
 }
 
