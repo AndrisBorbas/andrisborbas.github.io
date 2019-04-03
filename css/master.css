@@ -131,6 +131,10 @@ h1 {
    text-shadow: 2px 2px 5px #222;
 }
 
+.btn{
+   margin-bottom: 12px; margin-top: 6px;
+}
+
 p.dropdown-item {
    text-shadow: none;
 }
