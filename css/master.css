@@ -31,6 +31,7 @@ main {
 a {
    color: #62c0ff;
 }
+
 a:hover {
    color: #58ace5;
 
@@ -44,8 +45,8 @@ a:hover {
 /*Needs experimantal web platform flag on chrome*/
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
    .bg-blurred {
-      -webkit-backdrop-filter: blur(4px);
-      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
       background-color: rgba(191, 191, 191, 0.125) !important;
       background-color: #ccc2 !important;
    }
@@ -53,6 +54,11 @@ a:hover {
 
 .navbar-brand>img {
    border-radius: 4px;
+}
+
+.nav-item, .nav-link, .dropdown-item {
+   color: #fff !important;
+   text-shadow: 2px 2px 5px #222, 0px 0px 5px #000;
 }
 
 footer {
@@ -65,13 +71,17 @@ footer {
    z-index: 1;
 }
 
+.text-muted {
+   color: #848d94 !important;
+}
+
 h1 {
    margin-top: 66px !important;
    margin-bottom: 1.5rem;
    text-shadow: 2px 2px 5px #222;
 }
 
-.card > .collapse{
+.card>.collapse {
    border-bottom: 4px ridge rgb(80, 80, 80, .312);
    border-bottom: 4px ridge #5555;
 }
