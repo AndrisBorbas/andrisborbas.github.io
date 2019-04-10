@@ -39,7 +39,8 @@
       <link rel="stylesheet" href="css\master.css">
       <!--<link rel="stylesheet" href="css\master.scss">-->
 
-      <link rel="stylesheet" href="css\font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <!--<link rel="stylesheet" href="css\font-awesome.min.css">-->
 
    </head>
 
@@ -130,6 +131,29 @@
             <div class="accordion" id="blog" role="tablist" aria-multiselectable="true">
 
                <div class="card blogbg">
+                  <div class="card-header" role="tab" id="Folders">
+                     <h2 class="mb-0 blogtitle">
+                        <a data-toggle="collapse" href="#collapseFolders" aria-expanded="true" aria-controls="collapseFolders">
+                           Dropdown Folders Rainmeter Skin
+                        </a>
+                     </h2>
+                  </div>
+                  <div id="collapseFolders" class="collapse show" aria-labelledby="Folders">
+                     <div class="card-body">
+                        <div class="float-right embed-responsive embed-responsive-16by9 border-radius-15 small-image">
+                           <video class="embed-responsive-item" src="resources/folder.mp4" autoplay muted loop>
+                           </video>
+                        </div>
+                        <p class="context">I created this <a href="https://www.rainmeter.net/" target="_blank">Rainmeter</a> skin a while ago.
+                           I was inspired by my obnoxious desktop and my relatively clean iOS springboard(homescreen).
+                           So i decided to create this ios folder like skin that you can fill with anything and have it expand in "any" direction.
+                           Compiled Rainmeter skin availabe here: </p>
+                        <a class="btn btn-primary" role="download" href="https://github.com/AndrisBorbas/ShortcutsFolder/releases" target="_blank"><i class="fas fa-link"></i> Download</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="card blogbg">
                   <div class="card-header" role="tab" id="BlackCamo">
                      <h2 class="mb-0 blogtitle">
                         <a data-toggle="collapse" href="#collapseBlackCamo" aria-expanded="true" aria-controls="collapseBlackCamo">
@@ -143,10 +167,10 @@
                            <video class="embed-responsive-item" src="resources/camocarbonfiber.mp4" poster="resources/camocarbonfiberpw.png" autoplay muted loop>
                            </video>
                         </div>
-                        <p class="" style="margin-bottom: 6px;">I decided to make the skin on my phone in Substance Designer and i think it turned out alright.
+                        <p class="context">I decided to make the skin on my phone in Substance Designer and i think it turned out alright.
                            If you like the skin you can get it from <a class="" href="https://dbrand.com/" target="_blank">dbrand</a>.
                            The render was created in Marmoset Toolbag 3. Higher quality video availabe here: </p>
-                        <a class="btn btn-primary" role="download" href="resources/camocarbonfiberhq.mp4" download="CamoCarbonFiberRender"><i class="fa fa-download"></i> Download <br>High Quality</a>
+                        <a class="btn btn-primary" role="download" href="resources/camocarbonfiberhq.mp4" download="CamoCarbonFiberRender"><i class="fas fa-file-download"></i> Download <br>High Quality</a>
                      </div>
                   </div>
                </div>
@@ -165,10 +189,10 @@
                            <video class="embed-responsive-item" src="resources/desertbedrock.mp4" poster="resources/desertbedrockpw.png" autoplay muted loop>
                            </video>
                         </div>
-                        <p class="" style="margin-bottom: 6px;">I followed Daniel Thiger's <a class="" href="https://gumroad.com/l/detebedrocktut" target="_blank">excellent tutorial</a>
+                        <p class="context">I followed Daniel Thiger's <a class="" href="https://gumroad.com/l/detebedrocktut" target="_blank">excellent tutorial</a>
                            on how to create a Desert Bedrock material in Substance Designer. I learned a lot from the video and it helped me create other materials as well.
                            The render was created in Marmoset Toolbag 3. Higher quality video availabe here: </p>
-                        <a class="btn btn-primary" role="download" href="resources/desertbedrockhq.mp4" download="DesertBedrockRender"><i class="fa fa-download"></i> Download <br>High Quality</a>
+                        <a class="btn btn-primary" role="download" href="resources/desertbedrockhq.mp4" download="DesertBedrockRender"><i class="fa fa-file-download"></i> Download <br>High Quality</a>
                      </div>
                   </div>
                </div>
@@ -184,8 +208,8 @@
                   <div id="collapseNeptunDark" class="collapse show" aria-labelledby="NeptunDark">
                      <div class="card-body">
                         <img class="float-right border-radius-15 large-image" src="resources\neptundark.png">
-                        <p class="" style="margin-bottom: 6px;">This is a User CSS dark skin for BME Neptun. It can be installed with stylus. Any issues can be reported <a href="https://github.com/AndrisBorbas/DarkSkins/issues">here</a>.</p>
-                        <a class="btn btn-primary" role="button" href="https://raw.githubusercontent.com/AndrisBorbas/DarkSkins/master/neptun/neptun-dark.user.css" target="_blank">Install with Stylus</a>
+                        <p class="context">This is a User CSS dark skin for BME Neptun. It can be installed with stylus. Any issues can be reported <a href="https://github.com/AndrisBorbas/DarkSkins/issues">here</a>.</p>
+                        <a class="btn btn-primary" role="button" href="https://raw.githubusercontent.com/AndrisBorbas/DarkSkins/master/neptun/neptun-dark.user.css" target="_blank"><i class="fas fa-link"></i> Install with Stylus</a>
                         <br>
                      </div>
                   </div>
@@ -202,16 +226,16 @@
                   <div id="collapseTBP" class="collapse show" aria-labelledby="TessellationBP">
                      <div class="card-body">
                         <img class="float-right border-radius-15 large-image" src="resources\tessellation.png">
-                        <p class="" style="margin-bottom: 6px;">This is a UE4 material function that can be used to add tessellation to any material.
+                        <p class="context">This is a UE4 material function that can be used to add tessellation to any material.
                            The height of the tessellation can be controlled with a scalar. The function has parameters inside that can be
                            controlled in a material instance. <br />The maxTessFactor is 15 by default <strong>IN ENGINE</strong> because it gets slower if you go higher
                            on AMD cards. You can change the maxTessFactor by editing the FlatTessellation.ush and PNTriangles.ush files and then recompiling
                            <strong>EVERY</strong> engine shader. <br />The height is multplied by the tessellation factor, so the less you tessellate,
                            the heightmap gets applied less. This also works with landscapes if you use Worldposition-XY coords instead of LandscapeLayerCoords.</p>
-                        <a class="btn btn-primary" role="button" href="https://blueprintue.com/blueprint/4f3kvi9v/" target="_blank">Copyable Blueprint</a>
+                        <a class="btn btn-primary" role="button" href="https://blueprintue.com/blueprint/4f3kvi9v/" target="_blank"><i class="fas fa-link"></i> Copyable Blueprint</a>
                         <br>
                         <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#ue4bpw" aria-expanded="false" aria-controls="collapseExample" style="margin-bottom: 6px;">
-                           Blueprint graph
+                           <i class="far fa-window-maximize"></i> Blueprint graph
                         </button>
                         <div class="collapse" id="ue4bpw">
                            <div class="float-right embed-responsive embed-responsive-16by9 large-image">

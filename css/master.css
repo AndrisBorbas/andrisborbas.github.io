@@ -98,7 +98,7 @@ h1 {
    width: 66%;
    min-width: 280px;
    max-width: 575px;
-   margin-left: 1rem;
+   margin-left: 1.3rem;
    margin-bottom: 2rem;
    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
@@ -107,7 +107,7 @@ h1 {
    width: 33%;
    min-width: 280px;
    max-width: 575px;
-   margin-left: 1rem;
+   margin-left: 1.3rem;
    margin-bottom: 2rem;
    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
@@ -140,18 +140,21 @@ p.dropdown-item {
    text-shadow: none;
 }
 
-p {
+.context {
    color: #eee;
    text-shadow: 2px 2px 5px #222;
    word-break: keep-all;
    word-wrap: normal;
    overflow-wrap: normal;
+   margin-bottom: 6px;
+   text-align: justify;
 }
 
 a[data-toggle="collapse"]:after {
    display: inline-block;
    display: inline-block;
-   font: normal normal normal 14px/1 FontAwesome;
+   font: normal normal normal 14px/1 'Font Awesome 5 Free';
+   font-weight: 900;
    font-size: inherit;
    text-rendering: auto;
    -webkit-font-smoothing: antialiased;
