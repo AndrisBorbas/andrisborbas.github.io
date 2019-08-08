@@ -137,6 +137,15 @@ body {
     background: rgb(255, 241, 100);
 }
 
+#group3 {
+    z-index: 2;
+    /* slide over group 7 */
+}
+
+#group3 .parallax__layer--back {
+    background: rgb(102, 204, 102);
+}
+
 
 /* misc
   --------------------------------------------- */
