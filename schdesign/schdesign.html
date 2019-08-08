@@ -22,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="My home page / blog">
+    <meta name="description" content="schdesign test page">
     <meta name="keywords" content="AndrisBorbas,Andris,Borbas,HTML,CSS,Bootstrap,JavaScript">
     <meta name="author" content="AndrisBorbas">
     <link rel="icon" href="..\favicon.png">
@@ -63,19 +63,6 @@
 
 <body class="d-flex flex-column h-100">
 
-    <!-- <header>
-        <div class="parallax-container">
-            <div class="background">
-                <img class="background__image" src="https://path/to/image.jpg" />
-            </div>
-            <div class="foreground">
-                <div class="foreground__content">
-                    <h1 class="">Oooo, parallax</h1>
-                </div>
-            </div>
-        </div>
-    </header> -->
-
     <div class="debug">
         <label><input type="checkbox"> Debug</label>
     </div>
@@ -109,16 +96,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        var debugInput = document.querySelector("input");
-
-        function updateDebugState() {
-            document.body.classList.toggle('debug-on', debugInput.checked);
-        }
-        debugInput.addEventListener("click", updateDebugState);
-        updateDebugState();
-    </script>
 
     <main role="main" class="flex-shrink-0">
 
@@ -166,6 +143,16 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        var debugInput = document.querySelector("input");
+
+        function updateDebugState() {
+            document.body.classList.toggle('debug-on', debugInput.checked);
+        }
+        debugInput.addEventListener("click", updateDebugState);
+        updateDebugState();
+    </script>
 
 </body>
 
