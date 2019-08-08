@@ -23,10 +23,9 @@
   }
   
   /* Helper Function */
-  $base-parallax-perspective: 8px;
   
   @function parallax-scale-factor($z-distance) {
-    @return ($base-parallax-perspective - $z-distance) / $base-parallax-perspective;
+    @return (8px - $z-distance) / 8px;
   }
   
   /* Parallax Styles */
@@ -36,7 +35,7 @@
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    perspective: $base-parallax-perspective;
+    perspective: 8px;
     perspective-origin: 0%;
   }
   
