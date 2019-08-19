@@ -1,177 +1,176 @@
 html {
-   min-height: 100vh;
-   box-sizing: border-box;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-   box-sizing: inherit;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
-   position: relative;
-   margin: 0;
-   padding-bottom: 76px;
-   min-height: 100vh;
-   height: 100vh;
-   z-index: -2;
-   /*padding-bottom: 76px;*/
+    position: relative;
+    margin: 0;
+    padding-bottom: 76px;
+    min-height: 100vh;
+    height: 100vh;
+    z-index: -2;
+    /*padding-bottom: 76px;*/
 }
 
 header .stripes {
-   z-index: -1;
+    z-index: -1;
 }
 
 main {
-   color: #eee;
-   z-index: 0;
+    color: #eee;
+    z-index: 0;
 }
 
 a {
-   color: #62c0ff;
+    color: #62c0ff;
 }
 
 a:hover {
-   color: #58ace5;
-
+    color: #58ace5;
 }
 
 .bg-blurred {
-   background: linear-gradient(rgba(144, 144, 144, 0.8125), rgba(80, 80, 80, 0.75));
-   background: linear-gradient(#999d, #555c);
+    background: linear-gradient(rgba(144, 144, 144, 0.8125), rgba(80, 80, 80, 0.75));
+    background: linear-gradient(#999d, #555c);
 }
 
+
 /*Needs experimantal web platform flag on chrome*/
+
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-   .bg-blurred {
-      -webkit-backdrop-filter: blur(6px);
-      backdrop-filter: blur(6px);
-      background: rgba(144, 144, 144, 0.1875) !important;
-      background: #9993 !important;
-   }
+    .bg-blurred {
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        background: rgba(144, 144, 144, 0.1875) !important;
+        background: #9993 !important;
+    }
 }
 
 .navbar-brand>img {
-   border-radius: 4px;
+    border-radius: 4px;
 }
 
 .nav-item, .nav-link, .dropdown-item {
-   color: #fff !important;
-   text-shadow: 2px 2px 5px #222, 0px 0px 5px #000;
+    color: #fff !important;
+    text-shadow: 2px 2px 5px #222, 0px 0px 5px #000;
 }
 
 footer {
-   height: 60px;
-   width: 100%;
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .text-muted {
-   color: #848d94 !important;
+    color: #848d94 !important;
 }
 
 h1 {
-   margin-top: 66px !important;
-   margin-bottom: 1.5rem;
-   text-shadow: 2px 2px 5px #222;
+    margin-top: 66px;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 5px #222;
 }
 
 .card>.collapse {
-   border-bottom: 4px ridge rgb(80, 80, 80, .312);
-   border-bottom: 4px ridge #5555;
+    border-bottom: 4px ridge rgb(80, 80, 80, .312);
+    border-bottom: 4px ridge #5555;
 }
 
 .border-radius-15 {
-   border-radius: 15px;
+    border-radius: 15px;
 }
 
 .border-radius-50 {
-   border-radius: 50%;
+    border-radius: 50%;
 }
 
 .large-image {
-   width: 66%;
-   min-width: 280px;
-   max-width: 575px;
-   margin-left: 1.3rem;
-   margin-bottom: 2rem;
-   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+    width: 66%;
+    min-width: 280px;
+    max-width: 575px;
+    margin-left: 1.3rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .small-image {
-   width: 33%;
-   min-width: 280px;
-   max-width: 575px;
-   margin-left: 1.3rem;
-   margin-bottom: 2rem;
-   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+    width: 33%;
+    min-width: 280px;
+    max-width: 575px;
+    margin-left: 1.3rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3), 0 1rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .blogbg {
-   background-color: rgba(64, 64, 64, 0.125) !important;
-   background-color: #4442 !important;
+    background-color: rgba(64, 64, 64, 0.125) !important;
+    background-color: #4442 !important;
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-   .blogbg {
-      -webkit-backdrop-filter: blur(12px);
-      backdrop-filter: blur(12px);
-      background-color: rgba(64, 64, 64, 0.125) !important;
-      background-color: #4442 !important;
-   }
+    .blogbg {
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+        background-color: rgba(64, 64, 64, 0.125) !important;
+        background-color: #4442 !important;
+    }
 }
 
 .blogtitle>a {
-   color: #eee;
-   text-shadow: 2px 2px 5px #222;
+    color: #eee;
+    text-shadow: 2px 2px 5px #222;
 }
 
 .btn {
-   margin-bottom: 12px;
-   margin-top: 6px;
+    margin-bottom: 12px;
+    margin-top: 6px;
 }
 
 p.dropdown-item {
-   text-shadow: none;
+    text-shadow: none;
 }
 
 .context {
-   color: #eee;
-   text-shadow: 2px 2px 5px #222;
-   word-break: keep-all;
-   word-wrap: normal;
-   overflow-wrap: normal;
-   margin-bottom: 6px;
-   text-align: justify;
+    color: #eee;
+    text-shadow: 2px 2px 5px #222;
+    word-break: keep-all;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    margin-bottom: 6px;
+    text-align: justify;
 }
 
 a[data-toggle="collapse"]:after {
-   display: inline-block;
-   display: inline-block;
-   font: normal normal normal 14px/1 'Font Awesome 5 Free';
-   font-weight: 900;
-   font-size: inherit;
-   text-rendering: auto;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
-   content: "\f054";
-   transform: rotate(90deg);
-   transition: all linear 0.25s;
-   float: right;
-   text-shadow: 2px -2px 5px #222;
+    display: inline-block;
+    display: inline-block;
+    font: normal normal normal 14px/1 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f054";
+    transform: rotate(90deg);
+    transition: all linear 0.25s;
+    float: right;
+    text-shadow: 2px -2px 5px #222;
 }
 
 a[data-toggle="collapse"].collapsed:after {
-   transform: rotate(0deg);
-   text-shadow: 2px 2px 5px #222;
+    transform: rotate(0deg);
+    text-shadow: 2px 2px 5px #222;
 }
 
 a[data-toggle="collapse"] {
-   transform: rotate(0deg);
-   text-shadow: 2px 2px 5px #222;
+    transform: rotate(0deg);
+    text-shadow: 2px 2px 5px #222;
 }
