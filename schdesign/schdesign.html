@@ -2,41 +2,41 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137039313-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137039313-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-137039313-1', {
-            'page_title': 'schdesign',
-            'page_path': '/schdesign/schdesign.html'
-        });
-    </script>
+    gtag('config', 'UA-137039313-1', {
+      'page_title': 'schdesign',
+      'page_path': '/schdesign/schdesign.html'
+    });
+  </script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="schdesign test page">
-    <meta name="keywords" content="AndrisBorbas,Andris,Borbas,HTML,CSS,Bootstrap,JavaScript">
-    <meta name="author" content="AndrisBorbas">
-    <link rel="icon" href="..\favicon.png">
+  <meta name="description" content="schdesign test page">
+  <meta name="keywords" content="AndrisBorbas,Andris,Borbas,HTML,CSS,Bootstrap,JavaScript">
+  <meta name="author" content="AndrisBorbas">
+  <link rel="icon" href="..\favicon.png">
 
-    <title>Home Page</title>
+  <title>Home Page</title>
 
-    <script src="..\jquery-3.3.1\jquery.min.js"></script>
-    <!--<script src="..\popper.js-1.14.7\umd\popper.min.js"></script>-->
-    <link rel="stylesheet" href="..\bootstrap-4.3.1\css\bootstrap.min.css">
-    <script src="..\bootstrap-4.3.1\js\bootstrap.bundle.min.js"></script>
+  <script src="..\jquery-3.3.1\jquery.min.js"></script>
+  <!--<script src="..\popper.js-1.14.7\umd\popper.min.js"></script>-->
+  <link rel="stylesheet" href="..\bootstrap-4.3.1\css\bootstrap.min.css">
+  <script src="..\bootstrap-4.3.1\js\bootstrap.bundle.min.js"></script>
 
-    <!-- <link rel="stylesheet/less" type="text/css" href="..\less-3.9.0\styles.less" /> -->
-    <!-- <link rel="stylesheet/less" type="text/css" href="css\schdesign.less" /> -->
-    <!-- <script>
+  <!-- <link rel="stylesheet/less" type="text/css" href="..\less-3.9.0\styles.less" /> -->
+  <!-- <link rel="stylesheet/less" type="text/css" href="css\schdesign.less" /> -->
+  <!-- <script>
         less = {
             env: "development",
             async: false,
@@ -47,138 +47,174 @@
             relativeUrls: false,
             rootpath: ":/a.com/"
         }; -->
-    </script>
-    <script src="..\less-3.9.0\less.min.js" type="text/javascript"></script>
+  </script>
+  <script src="..\less-3.9.0\less.min.js" type="text/javascript"></script>
 
-    <link rel="stylesheet" href="..\css\griddark.css">
-    <link rel="stylesheet" href="..\css\dropdown.css">
-    <link rel="stylesheet" href="..\css\master.css">
-    <link rel="stylesheet" type="text/css" href="css\schdesign.css" />
-    <!--<link rel="stylesheet" href="..\css\master.scss">-->
+  <link rel="stylesheet" href="..\css\griddark.css">
+  <link rel="stylesheet" href="..\css\dropdown.css">
+  <link rel="stylesheet" href="..\css\master.css">
+  <link rel="stylesheet" type="text/css" href="css\schdesign.css" />
+  <!--<link rel="stylesheet" href="..\css\master.scss">-->
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="..\css\font-awesome.min.css">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="..\css\font-awesome.min.css">-->
 
 </head>
 
 <body class="d-flex flex-column h-100">
 
+  <header>
+
     <div class="debug">
-        <label><input type="checkbox"> Debug</label>
+      <label><input type="checkbox"> Debug</label>
     </div>
 
-    <header>
+  </header>
 
-        <div class="parallax">
-            <div id="group1" class="parallax__group">
-                <div class="parallax__layer parallax__layer--base">
-                    <div class="title">Base Layer</div>
-                    <div class="stripes">
-                        <span style="z-index: 6"></span>
-                        <span style="z-index: 6"></span>
-                    </div>
-                </div>
-                <div class="parallax__layer parallax__layer--back">
-                    <div class="title">Background Layer</div>
-                    <div class="stripes">
-                        <span style="z-index: 6"></span>
-                        <span style="z-index: 6"></span>
-                        <span style="z-index: 6"></span>
-                        <span style="z-index: 6"></span>
-                    </div>
-                </div>
-                <div class="parallax__layer parallax__layer--deep">
-                    <div class="title">Deep Background Layer</div>
-                    <div class="stripes">
-                        <span style="z-index: 6"></span>
-                        <span style="z-index: 6"></span>
-                        <span style="z-index: 6"></span>
-                        <span style="z-index: 6"></span>
-                        <span style="z-index: 6"></span>
-                    </div>
-                </div>
-                <div class="parallax__layer parallax__layer--fore">
-                    <div class="title">Foreground Layer</div>
-                    <div class="stripes">
-                        <span style="z-index: 6"></span>
-                    </div>
-                </div>
-            </div>
-            <div id="group2" class="parallax__group">
-                <div class="parallax__layer parallax__layer--base">
-                    <div class="title">Base Layer</div>
-                </div>
-            </div>
-            <div id="group3" class="parallax__group">
-                <div class="parallax__layer parallax__layer--base">
-                    <div class="title">Base Layer</div>
-                </div>
-                <div class="parallax__layer parallax__layer--back">
-                    <div class="title">Background Layer</div>
-                </div>
-            </div>
+  <div class="parallax">
+    <div id="group1" class="parallax-group">
+      <div class="parallax-layer parallax-layer-base">
+        <div class="title">Base Layer</div>
+        <div class="stripes">
+          <span style="z-index: 6"></span>
+          <span style="z-index: 6"></span>
         </div>
-
-    </header>
-
-    <main role="main" class="flex-shrink-0">
-
-        <div class="container">
-            <h1 class="">Home Page</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
-            </p>
-
-            <!--<span style="float: right;"><a href="https://andrisborbas.github.io/" target="_blank"><img src="resources\qr-code.png" class="qr img-fluid pull-xs-right" style="margin-left: 1.5rem; margin-bottom: 2rem;"></img></a></span>-->
-
-            <div class="imgs"></div>
-
+      </div>
+      <div class="parallax-layer parallax-layer-back">
+        <div class="title">Background Layer</div>
+        <div class="stripes">
+          <span style="z-index: 6"></span>
+          <span style="z-index: 6"></span>
+          <span style="z-index: 6"></span>
+          <span style="z-index: 6"></span>
         </div>
-    </main>
-
-    <footer class="footer py-3 bg-dark" style="margin-top: 16px !important;">
-        <div class="container">
-            <p class="text-muted" style="text-align: left;">
-                <a class="text-muted" href="https://andrisborbas.github.io/" target="_blank">Bottom text</a>
-                <span class="text-muted" style="float: right;">Copyright &copy; 2019</span>
-            </p>
+      </div>
+      <div class="parallax-layer parallax-layer-deep">
+        <div class="title">Deep Background Layer</div>
+        <div class="stripes">
+          <span style="z-index: 6"></span>
+          <span style="z-index: 6"></span>
+          <span style="z-index: 6"></span>
+          <span style="z-index: 6"></span>
+          <span style="z-index: 6"></span>
         </div>
-    </footer>
+      </div>
+      <div class="parallax-layer parallax-layer-fore">
+        <div class="title">Foreground Layer</div>
+        <div class="stripes">
+          <span style="z-index: 6"></span>
+        </div>
+      </div>
+    </div>
 
-    <script>
-        var debugInput = document.querySelector("input");
 
-        function updateDebugState() {
-            document.body.classList.toggle('debug-on', debugInput.checked);
-        }
-        debugInput.addEventListener("click", updateDebugState);
-        updateDebugState();
-    </script>
+    <div id="group2" class="parallax-group logo">
+      <div class="parallax-layer parallax-layer-deep">
+        <div>
+          <img src="" alt="">
+        </div>
+      </div>
+      <div class="parallax-layer parallax-layer-back">
+
+      </div>
+      <div class="parallax-layer parallax-layer-base back">
+        <div>
+          <img src="img/Background.svg" alt="">
+          <img src="img/Cover.svg" alt="">
+        </div>
+      </div>
+      <div class="parallax-layer parallax-layer-fore front">
+        <div>
+          <img src="img/i2.svg" alt="" style="">
+          <img src="img/i1.svg" alt="" style="position: relative;">
+          <img src="img/V.svg" alt="" style="position: relative;">
+          <img src="img/X.svg" alt="" style="position: relative;">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="group3" class="parallax-group">
+      <div class="parallax-layer parallax-layer-base">
+        <div class="title">Base Layer</div>
+      </div>
+      <div class="parallax-layer parallax-layer-back">
+        <div class="title">Background Layer</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <main role="main" class="flex-shrink-0">
+
+    <div class="container">
+      <h1 class="">Home Page</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <div class="parallax-test">Content</div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat fuga vel? Velit unde quas minima vero dolore voluptate rerum, odio distinctio et numquam illo ipsa quam. Labore, voluptatum quibusdam.
+      </p>
+
+      <!--<span style="float: right;"><a href="https://andrisborbas.github.io/" target="_blank"><img src="resources\qr-code.png" class="qr img-fluid pull-xs-right" style="margin-left: 1.5rem; margin-bottom: 2rem;"></img></a></span>-->
+
+      <div class="imgs"></div>
+
+    </div>
+  </main>
+
+  <footer class="footer py-3 bg-dark" style="margin-top: 16px !important;">
+    <div class="container">
+      <p class="text-muted" style="text-align: left;">
+        <a class="text-muted" href="https://andrisborbas.github.io/" target="_blank">Bottom text</a>
+        <span class="text-muted" style="float: right;">Copyright &copy; 2019</span>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    var debugInput = document.querySelector("input");
+
+    function updateDebugState() {
+      document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
 
 </body>
 
