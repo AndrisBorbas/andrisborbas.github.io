@@ -98,7 +98,9 @@ function viewFolder(folderName) {
       return getHtml([
         "<span>",
         "<div>",
+        '<a href="' + fileUrl + '" download>',
         '<img style="width:128px;height:128px;" src="' + fileUrl + '"/>',
+        "</a>",
         "</div>",
         "<div>",
         "<span onclick=\"deleteFile('" +
@@ -115,8 +117,7 @@ function viewFolder(folderName) {
         "</span>"
       ]);
     });
-    var message = files.length ?
-      "<p>Click on the X to delete the file</p>" :
+    var message = files.length ? (["<p>Download by clicking on the picture</p>", "<p>Click on the X to delete the file</p>"]) :
       "<p>You do not have any files in this folder. Please add files.</p>";
     var htmlTemplate = [
       "<h2>",
